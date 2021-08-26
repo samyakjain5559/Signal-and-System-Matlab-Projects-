@@ -1,0 +1,126 @@
+
+--------------------------------------------------------------------------------
+              Assertion detected at Tue Jan 19 17:14:31 2021 -0500
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : UTF-8
+  Deployed                 : false
+  Desktop Environment      : GNOME
+  GNU C Library            : 2.17 stable
+  Graphics Driver          : Unknown software 
+  Graphics card 1          : 0x8086 ( 0x8086 ) 0x3e92 Version 0.0.0.0 (0-0-0)
+  Java Version             : Java 1.8.0_202-b08 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : glnxa64
+  MATLAB Entitlement ID    : 5288850
+  MATLAB Root              : /pkgcache/matlab-r2020a
+  MATLAB Version           : 9.8.0.1417392 (R2020a) Update 4
+  OpenGL                   : software
+  Operating System         : "CentOS Linux release 7.8.2003 (Core)"
+  Process ID               : 13882
+  Processor ID             : x86 Family 6 Model 158 Stepping 10, GenuineIntel
+  Session Key              : 7845f332-16a2-4113-bde5-c305fbd1f0a5
+  Static TLS mitigation    : Enabled: Full
+  Window System            : The X.Org Foundation (12004000), display :10.0
+
+Fault Count: 2
+
+
+Additional Log Files:
+  Java Crash Report        : /cs/home/samayak/hs_error_pid13882.log
+  Java Log                 : /cs/home/samayak/java.log.13882
+
+
+Assertion in void {anonymous}::mwJavaAbort() at javainit.cpp line 1395:
+Fatal Java Exception. See this file for details: /cs/home/samayak/hs_error_pid13882.log
+
+Register State (captured):
+  RAX = 00ff00000000ff00  RBX = 00007f5d91e8f088
+  RCX = 0000000000000000  RDX = 00007f5d91e6e6a8
+  RSP = 00007f5bcda91540  RBP = 00007f5bcda91900
+  RSI = 00007f5d91e34bee  RDI = 00007f5bcda91550
+
+   R8 = 00007f5bcda91814   R9 = 00007f5bcda91814
+  R10 = fffffffffffffff8  R11 = 0000000000000d10
+  R12 = 00007f5d91e7f008  R13 = 00007f5bcda92180
+  R14 = 00007f5d754f6583  R15 = 00007f5d755014c0
+
+  RIP = 00007f5d91d8584e  EFL = 0000000000000000
+
+   CS = 0000   FS = 0000   GS = 0000
+
+Stack Trace (captured):
+[  0] 0x00007f5d91d7c553     /pkgcache/matlab-r2020a/bin/glnxa64/libmwfl.so+00853331
+[  1] 0x00007f5d91d7c74c     /pkgcache/matlab-r2020a/bin/glnxa64/libmwfl.so+00853836 _ZN10foundation4core4diag15stacktrace_base7captureEm+00000028
+[  2] 0x00007f5d91d81989     /pkgcache/matlab-r2020a/bin/glnxa64/libmwfl.so+00874889
+[  3] 0x00007f5d91d81af0     /pkgcache/matlab-r2020a/bin/glnxa64/libmwfl.so+00875248
+[  4] 0x00007f5d754a27ee /pkgcache/matlab-r2020a/bin/glnxa64/matlab_startup_plugins/jmi/../../../../bin/glnxa64/libmwjmi.so+01415150
+[  5] 0x00007f5d6ddab700 /pkgcache/matlab-r2020a/sys/java/jre/glnxa64/jre/lib/amd64/server/libjvm.so+09496320
+[  6] 0x00007f5d6db6273b /pkgcache/matlab-r2020a/sys/java/jre/glnxa64/jre/lib/amd64/server/libjvm.so+07100219
+[  7] 0x00007f5b856dfc42 /pkgcache/matlab-r2020a/bin/glnxa64/libnativewindow_x11.so+00011330 NativewindowCommon_FatalError+00000268
+[  8] 0x00007f5b856e0988 /pkgcache/matlab-r2020a/bin/glnxa64/libnativewindow_x11.so+00014728
+[  9] 0x00007f5d827182be                                 /lib64/libX11.so.6+00283326 _XIOError+00000078
+[ 10] 0x00007f5d827163ab                                 /lib64/libX11.so.6+00275371 _XReply+00000987
+[ 11] 0x00007f5d826fc741                                 /lib64/libX11.so.6+00169793 XGetSelectionOwner+00000081
+[ 12] 0x00007f5c6a35539e /pkgcache/matlab-r2020a/bin/glnxa64/libgdk-x11-2.0.so.0+00463774
+[ 13] 0x00007f5c6a3556f1 /pkgcache/matlab-r2020a/bin/glnxa64/libgdk-x11-2.0.so.0+00464625
+[ 14] 0x00007f5c6a33c073 /pkgcache/matlab-r2020a/bin/glnxa64/libgdk-x11-2.0.so.0+00360563
+[ 15] 0x00007f5c6a33c551 /pkgcache/matlab-r2020a/bin/glnxa64/libgdk-x11-2.0.so.0+00361809
+[ 16] 0x00007f5c6a33d7ce /pkgcache/matlab-r2020a/bin/glnxa64/libgdk-x11-2.0.so.0+00366542
+[ 17] 0x00007f5c6a33f0c6 /pkgcache/matlab-r2020a/bin/glnxa64/libgdk-x11-2.0.so.0+00372934
+[ 18] 0x00007f5c6a33f14e /pkgcache/matlab-r2020a/bin/glnxa64/libgdk-x11-2.0.so.0+00373070
+[ 19] 0x00007f5c6872a099                            /lib64/libglib-2.0.so.0+00311449 g_main_context_dispatch+00000345
+[ 20] 0x00007f5c6872a3f8                            /lib64/libglib-2.0.so.0+00312312
+[ 21] 0x00007f5c6872a4ac                            /lib64/libglib-2.0.so.0+00312492 g_main_context_iteration+00000044
+[ 22] 0x00007f5bd2be5f86 /pkgcache/matlab-r2020a/cefclient/sys/os/glnxa64/libcef.so+31612806
+[ 23] 0x00007f5bd2be4367 /pkgcache/matlab-r2020a/cefclient/sys/os/glnxa64/libcef.so+31605607
+[ 24] 0x00007f5bd2c0120e /pkgcache/matlab-r2020a/cefclient/sys/os/glnxa64/libcef.so+31724046
+[ 25] 0x00007f5bd2c2b2e7 /pkgcache/matlab-r2020a/cefclient/sys/os/glnxa64/libcef.so+31896295
+[ 26] 0x00007f5bd2c26ee3 /pkgcache/matlab-r2020a/cefclient/sys/os/glnxa64/libcef.so+31878883
+[ 27] 0x00007f5d93b94ea5                             /lib64/libpthread.so.0+00032421
+[ 28] 0x00007f5d933258dd                                   /lib64/libc.so.6+01042653 clone+00000109
+
+
+Assertion in void {anonymous}::mwJavaAbort() at javainit.cpp line 1395:
+Fatal Java Exception. See this file for details: /cs/home/samayak/hs_error_pid13882.log
+
+Register State (captured):
+  RAX = 00007f5d1104573a  RBX = 00007f5d91e8f088
+  RCX = 0000000000000000  RDX = 00007f5d91e6e6a8
+  RSP = 00007f5cf8d430f0  RBP = 00007f5cf8d434b0
+  RSI = 00007f5d91e34bee  RDI = 00007f5cf8d43100
+
+   R8 = 00007f5cf8d433c4   R9 = 00007f5cf8d433c4
+  R10 = 00007f5cf8d43880  R11 = 0000000000000000
+  R12 = 00007f5d91e7f008  R13 = 00007f5cf8d43d30
+  R14 = 00007f5d754f6583  R15 = 00007f5d755014c0
+
+  RIP = 00007f5d91d8584e  EFL = 0000000000000002
+
+   CS = 3eeb   FS = 9329   GS = 7f5d
+
+Stack Trace (captured):
+[  0] 0x00007f5d91d7c553     /pkgcache/matlab-r2020a/bin/glnxa64/libmwfl.so+00853331
+[  1] 0x00007f5d91d7c74c     /pkgcache/matlab-r2020a/bin/glnxa64/libmwfl.so+00853836 _ZN10foundation4core4diag15stacktrace_base7captureEm+00000028
+[  2] 0x00007f5d91d81989     /pkgcache/matlab-r2020a/bin/glnxa64/libmwfl.so+00874889
+[  3] 0x00007f5d91d81af0     /pkgcache/matlab-r2020a/bin/glnxa64/libmwfl.so+00875248
+[  4] 0x00007f5d754a27ee /pkgcache/matlab-r2020a/bin/glnxa64/matlab_startup_plugins/jmi/../../../../bin/glnxa64/libmwjmi.so+01415150
+[  5] 0x00007f5d6ddab700 /pkgcache/matlab-r2020a/sys/java/jre/glnxa64/jre/lib/amd64/server/libjvm.so+09496320
+[  6] 0x00007f5d6db6273b /pkgcache/matlab-r2020a/sys/java/jre/glnxa64/jre/lib/amd64/server/libjvm.so+07100219
+[  7] 0x00007f5b856dfc42 /pkgcache/matlab-r2020a/bin/glnxa64/libnativewindow_x11.so+00011330 NativewindowCommon_FatalError+00000268
+[  8] 0x00007f5b856e0988 /pkgcache/matlab-r2020a/bin/glnxa64/libnativewindow_x11.so+00014728
+[  9] 0x00007f5d827182be                                 /lib64/libX11.so.6+00283326 _XIOError+00000078
+[ 10] 0x00007f5d827163ab                                 /lib64/libX11.so.6+00275371 _XReply+00000987
+[ 11] 0x00007f5d826fb5f3                                 /lib64/libX11.so.6+00165363 XGetInputFocus+00000083
+[ 12] 0x00007f5cf9afc148 /pkgcache/matlab-r2020a/sys/java/jre/glnxa64/jre/lib/amd64/libawt_xawt.so+00184648 Java_sun_awt_X11_XlibWrapper_XGetInputFocus+00000024
+[ 13] 0x00007f5d110186c7                                   <unknown-module>+00000000
+[ 14] 0x00007f5d11007dd0                                   <unknown-module>+00000000
+[ 15] 0x00007f5d11007dd0                                   <unknown-module>+00000000
+[ 16] 0x00007f5d11008040                                   <unknown-module>+00000000
+[ 17] 0x00007f5d110082bd                                   <unknown-module>+00000000
+[ 18] 0x00007f5d110082bd                                   <unknown-module>+00000000
+[ 19] 0x00007f5d110082bd                                   <unknown-module>+00000000
+[ 20] 0x00007f5d119958d8                                   <unknown-module>+00000000
+

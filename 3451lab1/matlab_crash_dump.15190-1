@@ -1,0 +1,33 @@
+
+--------------------------------------------------------------------------------
+              Assertion detected at Wed Jan 20 02:47:05 2021 -0500
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : UTF-8
+  Deployed                 : false
+  Desktop Environment      : GNOME
+  GNU C Library            : 2.17 stable
+  Graphics Driver          : Brian Paul Mesa X11 Version 2.1 Mesa 17.1.3
+  Graphics card 1          : 0x8086 ( 0x8086 ) 0x3e92 Version 0.0.0.0 (0-0-0)
+  Java Version             : Java 1.8.0_202-b08 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : glnxa64
+  MATLAB Entitlement ID    : 5288850
+  MATLAB Root              : /pkgcache/matlab-r2020a
+  MATLAB Version           : 9.8.0.1417392 (R2020a) Update 4
+  OpenGL                   : software
+  Operating System         : "CentOS Linux release 7.8.2003 (Core)"
+  Process ID               : 15190
+  Processor ID             : x86 Family 6 Model 158 Stepping 10, GenuineIntel
+  Session Key              : 91a56ff5-a865-4349-8abe-c076fccfbccb
+  Static TLS mitigation    : Enabled: Full
+  Window System            : The X.Org Foundation (12004000), display :10.0
+
+Fault Count: 1
+
+
+Additional Log Files:
+  Java Crash Report        : /cs/home/samayak/hs_error_pid15190.log
+  Java Log                 : /cs/home/samayak/java.log.15190

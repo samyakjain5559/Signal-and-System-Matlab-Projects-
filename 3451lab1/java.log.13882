@@ -1,0 +1,18 @@
+  Operating System: Linux 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64
+  Processor ID:     x86 Family 6 Model 158 Stepping 10, GenuineIntel
+  Host Name:        ea38
+FATAL ERROR in native method: Nativewindow X11 IOError: Display 0x7f5cc1486790 (:10.0): Resource temporarily unavailable
+FATAL ERROR in native method: Nativewindow X11 IOError: Display 0x7f5c9cb794a0 (:10.0): Resource temporarily unavailable
+	at sun.awt.X11.XlibWrapper.XGetInputFocus(Native Method)
+	at sun.awt.X11.XBaseWindow.xGetInputFocus(XBaseWindow.java:621)
+	at sun.awt.X11.XWindowPeer.getNativeFocusedWindowPeer(XWindowPeer.java:572)
+	at sun.awt.X11.XWindowPeer.handleFocusEvent(XWindowPeer.java:890)
+	at sun.awt.X11.XDecoratedPeer.handleFocusEvent(XDecoratedPeer.java:230)
+	at sun.awt.X11.XFocusProxyWindow.handleFocusEvent(XFocusProxyWindow.java:77)
+	at sun.awt.X11.XFocusProxyWindow.dispatchEvent(XFocusProxyWindow.java:70)
+	at sun.awt.X11.XBaseWindow.dispatchToWindow(XBaseWindow.java:1086)
+	at sun.awt.X11.XToolkit.dispatchEvent(XToolkit.java:508)
+	at sun.awt.X11.XToolkit.run(XToolkit.java:622)
+	at sun.awt.X11.XToolkit.run(XToolkit.java:538)
+	at java.lang.Thread.run(Thread.java:748)
+FATAL ERROR in native method: Nativewindow X11 IOError: Display 0x7f5d682237e0 (:10.0): Resource temporarily unavailable
